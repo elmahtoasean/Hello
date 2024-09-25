@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!----======== CSS ======== -->
+  <link rel="stylesheet" href="capital.css">
+
+  <!----===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  
+</head>
+
+<body onload="toggleFields()">
+
+
+  <nav class="sidebar close">
+    <header>
+    
+        <div class="text logo-text">
+          <h1><i class='bx bxl-codepen' ></i><span class="name">AMS</h1>
+        </div>
+      
+
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+
+        <li class="search-box">
+          <i class='bx bx-search icon'></i>
+          <input type="text" placeholder="Search ...">
+        </li>
+
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-home-alt icon'></i>
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-bar-chart-alt-2 icon'></i>
+              <span class="text nav-text">Entries</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-bell icon'></i>
+              <span class="text nav-text">Notifications</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+                <i class='bx bxs-report icon'></i>
+              <span class="text nav-text">Report</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+                <i class='bx bxs-cog icon' ></i>
+              <span class="text nav-text">Settings</span>
+            </a>
+          </li>
+
+          
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <li class="">
+          <a href="#">
+            <i class='bx bx-log-out icon'></i>
+            <span class="text nav-text">Logout</span>
+          </a>
+        </li>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <section class="home">
+    <div class="container">
+      <header>Capital Details Will be Shown Here</header>
+    </div>
+    <div class="form">
+      <form id="addCustomer" action="incomecon.php" method="post" class="visible-form">
+          <div id="addCustome">
+            <div class="label">
+             <label for="addNew">Add Capital</label></div>
+              <div class="input-field">
+                  <div class="date">
+                      <label>Date:</label>
+                      <input type="date" name="date" placeholder="Enter transaction date" required>
+                  </div>
+                  <div class="capital">
+                      <label for="capital">Amount:</label>
+                      <input type="number" step="0.01" min="1" placeholder="Enter capital amount" required>
+                  </div>
+              </div>
+              <div class="input-field">
+                  <div class="desc">
+                      <label for="desc">Description:</label>
+                      <input type="text" placeholder="Enter short description" required>
+                  </div>
+              </div>
+              <button type="submit">Insert capital</button>
+          </div>
+      </form>
+  </div>
+  
+</section>
+
+  
+  
+  <script src="capital.js"></script>
+  
+</script>
+
+</body>
+
+</html>
